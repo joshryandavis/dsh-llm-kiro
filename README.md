@@ -1,7 +1,6 @@
-# @joshryandavis/dsh-llm-kiro
+# dsh-llm-kiro
 
 A Kiro provider for the [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) LLM seam.
-Kiro is the AWS CodeWhisperer/Q successor (kiro.dev): a free model menu (Claude, DeepSeek, MiniMax, GLM, Qwen3 Coder, Auto) behind an AWS SSO / social OAuth login.
 
 The package is a standalone Cordis plugin: it mounts in any harness composition through
 `cordis.yml`, registers the `kiro` provider route on `ctx.llm`, and needs no changes to the
@@ -27,7 +26,7 @@ DSH installation provides them. It also declares the `dsh` bundle manifest
 plain plugin dependency.
 
 ```bash
-npm install @joshryandavis/dsh-llm-kiro   # or: pnpm add @joshryandavis/dsh-llm-kiro
+npx -y @deepseek-ai/dsh plugin --profile web install @joshryandavis/dsh-llm-kiro
 ```
 
 Mount it in `cordis.yml`:
