@@ -1,0 +1,17 @@
+# Publishing is governed by the "files" whitelist in package.json
+# (lib, cordis.patch.yml — plus package.json/README/LICENSE/main, always).
+# npm therefore packs nothing listed below; this file is belt-and-braces
+# for tooling that consults it directly.
+src/
+tests/
+node_modules/
+coverage/
+lib/*.map
+*.tsbuildinfo
+.kiro-management-models-cache.json
+.context/
+.npmrc
+tsconfig.json
+tsconfig.build.json
+vitest.config.ts
+pnpm-lock.yaml

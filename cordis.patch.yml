@@ -1,0 +1,8 @@
+# The dsh-llm-kiro profile bundle: mounts the Kiro provider plugin as one insert
+# over the profile root. Everything the plugin needs at runtime — the harness
+# seam packages (dsh-llm, settings, credentials, ...) — is already mounted by
+# the base bundle; credentials, token refresh, the Kiro backend, and the model
+# catalog live in @joshryandavis/dsh-llm-kiro.
+- insert:
+    - id: llm-kiro
+      name: '@joshryandavis/dsh-llm-kiro'

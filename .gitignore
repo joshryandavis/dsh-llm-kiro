@@ -1,0 +1,21 @@
+# --- Dependencies ---
+node_modules/
+
+# --- Build output (tsc -b emits into lib/; rebuilt on publish) ---
+lib/
+*.tsbuildinfo
+
+# --- Test artifacts ---
+coverage/
+.kiro-management-models-cache.json
+
+# --- Local dev checkout of the harness, sibling of this repo ---
+# tsconfig/vitest resolve the deepseek-harness sources via ../.context/deepseek-harness
+.context/
+
+# --- Logs & OS junk ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store

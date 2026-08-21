@@ -1,0 +1,9 @@
+# Normalize line endings; keep everything LF.
+* text=auto eol=lf
+
+# Lockfiles and caches must stay byte-identical.
+pnpm-lock.yaml -text
+*.tsbuildinfo -text
+
+# Mark generated build output.
+/lib/** linguist-generated=true

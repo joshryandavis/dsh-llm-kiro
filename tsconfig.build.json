@@ -1,0 +1,57 @@
+{
+  "extends": "../.context/deepseek-harness/tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib",
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "src"
+  ],
+  "references": [
+    {
+      "path": "../.context/deepseek-harness/vendor/cordis"
+    },
+    {
+      "path": "../.context/deepseek-harness/vendor/cosmokit"
+    },
+    {
+      "path": "../.context/deepseek-harness/vendor/schemastery"
+    },
+    {
+      "path": "../.context/deepseek-harness/vendor/loader"
+    },
+    {
+      "path": "../.context/deepseek-harness/vendor/include"
+    },
+    {
+      "path": "../.context/deepseek-harness/packages/llm/llm"
+    },
+    {
+      "path": "../.context/deepseek-harness/packages/credentials/credentials"
+    },
+    {
+      "path": "../.context/deepseek-harness/packages/util/launch-environment"
+    },
+    {
+      "path": "../.context/deepseek-harness/packages/settings/settings"
+    },
+    {
+      "path": "../.context/deepseek-harness/packages/settings/settings-file"
+    },
+    {
+      "path": "../.context/deepseek-harness/packages/credentials/credentials-local"
+    },
+    {
+      "path": "../.context/deepseek-harness/packages/runtime-diagnostics/invariants"
+    },
+    {
+      "path": "../.context/deepseek-harness/packages/util/timeout"
+    },
+    {
+      "path": "../.context/deepseek-harness/packages/attachment/attachment"
+    }
+  ]
+}
